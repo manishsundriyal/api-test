@@ -1,0 +1,27 @@
+{
+  "name": "api-test",
+  "version": "1.0.0",
+  "description": "\"api-hero\"",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manishsundriyal/api-test.git"
+  },
+  "keywords": [
+    "xx"
+  ],
+  "author": "Manish Kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manishsundriyal/api-test/issues"
+  },
+  "homepage": "https://github.com/manishsundriyal/api-test#readme"
+}
