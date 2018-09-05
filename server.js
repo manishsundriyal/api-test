@@ -10,6 +10,12 @@ app.get('/listUsers', function (req, res) {
         res.end( data );
     });
  })
+ app.get('/listUsers2', function (req, res) {
+    fs.readFile( __dirname + "/" + "database.json", 'utf8', function (err, data) {
+        console.log( data );
+        res.end( data );
+    });
+ })
 
  app.post('/addUser', function (req, res) {
     // First read existing users.
@@ -30,7 +36,7 @@ app.get('/listUsers', function (req, res) {
  app.get('/getMessage',function(req, res){
 
     const obj = {name: "Sapna Upreti", message:"Happy Teacher's Day", success: true};
-    res.status(200).end(JSON.stringify(obj));
+    res.end(JSON.stringify(obj));
 
  })
 
