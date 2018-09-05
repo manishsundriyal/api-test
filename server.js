@@ -29,7 +29,8 @@ app.get('/listUsers', function (req, res) {
 
  app.get('/getMessage',function(req, res){
 
-    res.status(200).end({name: "Sapna Upreti", message:"Happy Teacher's Day", success: true});
+    const obj = {name: "Sapna Upreti", message:"Happy Teacher's Day", success: true};
+    res.status(200).end(JSON.stringify(obj));
 
  })
 
