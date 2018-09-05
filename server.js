@@ -27,6 +27,12 @@ app.get('/listUsers', function (req, res) {
     });
  })
 
+ app.get('/getMessage',function(req, res){
+
+    res.status(200).send({name: "Sapna Upreti", message:"Happy Teacher's Day", success: true});
+
+ })
+
  app.get('/:id', function (req, res) {
     // First read existing users.
     fs.readFile( __dirname + "/" + "database.json", 'utf8', function (err, data) {
